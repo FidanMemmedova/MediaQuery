@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#featuredCategory .container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+#featuredCategory .container .featuredCategoryItem {
+    display: flex;
+    width: 52%;
+    justify-content: space-between;
+    background-color: #F8FBFF;
+    margin-top: 20px;
+}
+
+#featuredCategory .container .featuredCategoryItemText {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-top: 20px;
+}
+
+#featuredCategory .container .featuredCategoryItemText span {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 13px;
+}
+
+#featuredCategory .container .featuredCategoryItemText p {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+}
+
+#featuredCategory .container .featuredCategoryItem.smaller {
+    width: 45%;
+}
+
+#featuredCategory .container .featuredCategoryItem.noFlex {
+    flex-direction: column;
+}
+
+#featuredCategory .container .featuredCategoryItem.noFlex> :nth-child(2) {
+    text-align: end;
+}
+
+@media screen and (max-width:575px) {
+    #featuredCategory .container .featuredCategoryItem {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #featuredCategory .container .featuredCategoryItem.smaller {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #featuredCategory .container .featuredCategoryItem img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:991px) {
+    #featuredCategory .container .featuredCategoryItem {
+        width: 48%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #featuredCategory .container .featuredCategoryItem.smaller {
+        width: 48%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #featuredCategory .container .featuredCategoryItem img {
+        max-width: 100%
+    }
+
+    #featuredCategory .container .featuredCategoryItem.noFlex> :nth-child(2) {
+        text-align: center;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+    #featuredCategory .container .featuredCategoryItem {
+        width: 58%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #featuredCategory .container .featuredCategoryItem.smaller {
+        width: 38%;
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    #featuredCategory .container .featuredCategoryItem img {
+        max-width: 100%
+    }
+
+    #featuredCategory .container .featuredCategoryItem.noFlex> :nth-child(2) {
+        text-align: center;
+    }
+}
